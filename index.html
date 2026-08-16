@@ -265,39 +265,8 @@ section{scroll-margin-top:96px}
 .stat .l{font-size:13.5px;letter-spacing:.12em;text-transform:uppercase;color:#8CA2C2;margin-top:10px;display:block}
 
 /* ================= mapa ================= */
-.map-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,52px);align-items:start}
-.map-holder{position:relative;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line);padding:8px;box-shadow:var(--shadow-soft)}
-.map-holder img.mapa{width:100%}
-.hot{
-  position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;
-  border:2px solid transparent;background:transparent;padding:0;cursor:pointer;
-  transition:border-color .3s var(--ease),transform .3s var(--ease),box-shadow .3s
-}
-.hot::before{
-  content:"";position:absolute;inset:11px;border-radius:50%;
-  background:var(--dot-color,var(--navy));box-shadow:0 0 0 2px #fff
-}
-.hot::after{
-  content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--gold);
-  opacity:0;transform:scale(.6);transition:opacity .35s,transform .35s var(--ease)
-}
-.hot:hover,.hot.on{border-color:var(--gold);transform:scale(1.12);box-shadow:0 0 0 6px rgba(200,145,47,.16)}
-.hot.on::after{opacity:1;animation:ring 1.8s ease-out infinite}
-@keyframes ring{0%{transform:scale(.7);opacity:.9}100%{transform:scale(1.9);opacity:0}}
-.deleg-panel{
-  background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:24px 26px;margin-bottom:22px;
-  min-height:112px;box-shadow:var(--shadow-soft)
-}
-.deleg-panel h3{font-size:1.35rem;margin-bottom:4px;color:var(--navy)}
-.deleg-panel p{margin:0;color:var(--steel);font-size:.97rem;font-weight:300}
-.deleg-panel .z{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;display:block}
-.deleg-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
-.deleg-list button{
-  background:var(--cream);border:1px solid var(--line);border-radius:100px;padding:8px 16px;
-  font-family:inherit;font-size:14.5px;color:var(--steel);cursor:pointer;
-  transition:transform .28s var(--ease),background .28s,color .28s,border-color .28s
-}
-.deleg-list button:hover,.deleg-list button.on{background:var(--navy);border-color:var(--navy);color:#fff;transform:translateY(-2px)}
+.map-holder{border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line);padding:8px;box-shadow:var(--shadow-soft)}
+.map-holder img.mapa{width:100%;display:block}
 
 /* ================= calidad ================= */
 .quality{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,4vw,60px);align-items:start}
@@ -437,7 +406,7 @@ footer a:hover{color:#fff;transform:translateX(4px)}
 
 /* responsive */
 @media (max-width:1000px){
-  .hero-grid,.map-layout,.quality,.contact-layout,.panel.on{grid-template-columns:1fr}
+  .hero-grid,.quality,.contact-layout,.panel.on{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
   .foot-top{grid-template-columns:1fr 1fr}
   .hero-seal{opacity:.06}
@@ -873,28 +842,13 @@ footer a:hover{color:#fff;transform:translateX(4px)}
     <div class="sec-head rv">
       <p class="eyebrow">Red comercial y representación nacional</p>
       <h2>12 oficinas comerciales y representación nacional</h2>
-      <p>Progesa cuenta con 12 oficinas comerciales y, además, representación nacional en otros puntos del territorio, con estructura en península, Baleares y Canarias. Pulse una ciudad o un punto del mapa para verla.</p>
+      <p>Progesa cuenta con 12 oficinas comerciales y, además, representación nacional en otros puntos del territorio, con estructura en península, Baleares y Canarias.</p>
     </div>
 
-    <div class="map-layout rv">
-      <div class="map-holder" id="mapHolder">
-        <img class="mapa" src="img/mapa-delegaciones.jpg" alt="Mapa de España con las oficinas comerciales y los puntos de representación nacional de Progesa Seguridad" width="846" height="648" loading="lazy">
-      </div>
-
-      <div>
-        <p style="display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--steel);margin:0 0 16px">
-          <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:var(--navy);display:inline-block"></span>Oficina comercial</span>
-          <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:12px;height:12px;border-radius:50%;background:var(--gold);display:inline-block"></span>Representación nacional</span>
-        </p>
-        <div class="deleg-panel" id="delegPanel" aria-live="polite">
-          <span class="z" id="dpZone">Oficina comercial</span>
-          <h3 id="dpName">Barcelona</h3>
-          <p id="dpTxt">Oficina comercial de Progesa, interlocutor para los servicios contratados en su zona.</p>
-        </div>
-        <ul class="deleg-list" id="delegList"></ul>
-        <p style="margin-top:22px;font-size:15px;color:var(--steel)">¿Su instalación está fuera de estas ciudades? Damos servicio en todo el territorio nacional desde la oficina comercial más próxima. <a href="#contacto" style="color:var(--navy);font-weight:600">Consúltenos</a>.</p>
-      </div>
+    <div class="map-holder rv">
+      <img class="mapa" src="img/mapa-delegaciones.jpg" alt="Mapa de España con las oficinas comerciales y los puntos de representación nacional de Progesa Seguridad" width="846" height="648" loading="lazy">
     </div>
+    <p style="margin-top:22px;font-size:15px;color:var(--steel)">¿Su instalación está fuera de estas ciudades? Damos servicio en todo el territorio nacional desde la oficina comercial más próxima. <a href="#contacto" style="color:var(--navy);font-weight:600">Consúltenos</a>.</p>
   </div>
 </section>
 
@@ -1277,46 +1231,6 @@ const DELEGACIONES = [
   ["Palma de Mallorca","representacion",88.55,54.40],
   ["Las Palmas de Gran Canaria","representacion",3.39,93.94]
 ].map(([nombre,tipo,x,y])=>[nombre,tipo,x,y,tipo==='oficina'?TXT_OFICINA:TXT_REPR]);
-
-/* ---- Construcción del mapa interactivo y del listado ---- */
-const holder=document.getElementById('mapHolder');
-const listEl=document.getElementById('delegList');
-const dpName=document.getElementById('dpName');
-const dpTxt=document.getElementById('dpTxt');
-const dpZone=document.querySelector('#delegPanel .z');
-
-const TIPO_LABEL={oficina:'Oficina comercial',representacion:'Representación nacional'};
-
-DELEGACIONES.forEach((d,i)=>{
-  const [nombre,tipo,x,y]=d;
-  const hot=document.createElement('button');
-  hot.className='hot'; hot.type='button'; hot.dataset.i=i;
-  hot.style.left=x+'%'; hot.style.top=y+'%';
-  hot.style.setProperty('--dot-color', tipo==='oficina' ? 'var(--navy)' : 'var(--gold)');
-  hot.setAttribute('aria-label',TIPO_LABEL[tipo]+' de '+nombre);
-  holder.appendChild(hot);
-
-  const li=document.createElement('li');
-  const b=document.createElement('button');
-  b.type='button'; b.dataset.i=i; b.textContent=nombre;
-  li.appendChild(b); listEl.appendChild(li);
-});
-
-function selectDeleg(i){
-  const [nombre,tipo,,,txt]=DELEGACIONES[i];
-  document.querySelectorAll('.hot.on,.deleg-list button.on').forEach(el=>el.classList.remove('on'));
-  holder.querySelector('.hot[data-i="'+i+'"]').classList.add('on');
-  listEl.querySelector('button[data-i="'+i+'"]').classList.add('on');
-  dpZone.textContent=TIPO_LABEL[tipo];
-  dpName.textContent=nombre;
-  dpTxt.textContent=txt;
-}
-holder.addEventListener('click',e=>{const h=e.target.closest('.hot');if(h)selectDeleg(+h.dataset.i)});
-holder.addEventListener('mouseover',e=>{const h=e.target.closest('.hot');if(h)selectDeleg(+h.dataset.i)});
-listEl.addEventListener('click',e=>{const b=e.target.closest('button');if(b)selectDeleg(+b.dataset.i)});
-listEl.addEventListener('mouseover',e=>{const b=e.target.closest('button');if(b)selectDeleg(+b.dataset.i)});
-listEl.addEventListener('focusin',e=>{const b=e.target.closest('button');if(b)selectDeleg(+b.dataset.i)});
-selectDeleg(5); // Barcelona
 
 /* Selector de delegación del formulario de empleo */
 const selDeleg=document.querySelector('[data-deleg]');
