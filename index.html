@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Progesa Seguridad | Empresa de seguridad privada y servicios auxiliares en España</title>
+<meta name="description" content="Empresa de seguridad privada homologada por la D.G.P. (nº 4589) con 23 delegaciones en España. Vigilantes de seguridad, rondas, servicio de acuda, control de accesos y auxiliares de servicio para puertos, aeropuertos, industria y logística.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://www.progesa.es/">
+<meta name="theme-color" content="#0C1E3C">
+<meta name="geo.region" content="ES-CT">
+<meta name="geo.placename" content="L'Hospitalet de Llobregat, Barcelona">
+
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo-32.png">
+<link rel="apple-touch-icon" href="img/logo-180.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Progesa Seguridad">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://www.progesa.es/">
+<meta property="og:title" content="Progesa Seguridad | Seguridad privada y servicios auxiliares en toda España">
+<meta property="og:description" content="Vigilancia, acuda, rondas y control de accesos. Homologada D.G.P. nº 4589. ISO 9001, 14001, 45001 y 27001. 23 delegaciones en España.">
+<meta property="og:image" content="https://www.progesa.es/img/logo-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Progesa Seguridad | Seguridad privada en toda España">
+<meta name="twitter:description" content="Vigilancia, acuda, rondas y control de accesos. Homologada D.G.P. nº 4589.">
+<meta name="twitter:image" content="https://www.progesa.es/img/logo-512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Source+Sans+3:ital,wght@0,300..700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#16202F;
+  --navy:#14315F;
+  --navy-deep:#0C1E3C;
+  --navy-night:#081730;
+  --sand:#F6F3EE;
+  --cream:#FFFDFA;
+  --gold:#C8912F;
+  --gold-lit:#E3AC42;
+  --steel:#5D6A7C;
+  --line:#E6E0D6;
+  --line-dark:#22406E;
+  --max:1180px;
+  --pad:clamp(20px,5vw,60px);
+  --r:16px;
+  --r-sm:10px;
+  --shadow:0 18px 44px -22px rgba(12,30,60,.35);
+  --shadow-soft:0 10px 30px -18px rgba(12,30,60,.3);
+  --ease:cubic-bezier(.22,.68,.32,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--sand);color:var(--ink);
+  font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17.5px;line-height:1.65;font-weight:400;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{
+  font-family:"Fraunces",Georgia,"Times New Roman",serif;
+  font-variation-settings:"SOFT" 24,"WONK" 1,"opsz" 100;
+  font-weight:600;line-height:1.12;margin:0;letter-spacing:-.012em;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{
+  font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin:0 0 16px;display:flex;align-items:center;gap:12px
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--gold);display:block}
+.dark-sec .eyebrow{color:var(--gold-lit)}
+.skip{position:absolute;left:-9999px;background:var(--gold);color:#fff;padding:12px 18px;z-index:999;border-radius:0 0 var(--r-sm) 0}
+.skip:focus{left:0;top:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* ================= topbar ================= */
+.topbar{background:var(--navy-night);color:#A9BCD8;font-size:13.5px}
+.topbar .wrap{display:flex;gap:22px;align-items:center;justify-content:space-between;padding:9px var(--pad);flex-wrap:wrap}
+.topbar a{text-decoration:none;transition:color .25s}
+.topbar a:hover{color:#fff}
+.topbar strong{color:#fff;font-weight:600}
+.topbar-links{display:flex;gap:24px;flex-wrap:wrap}
+.gold{color:var(--gold-lit)}
+
+/* ================= header ================= */
+.site-header{
+  position:sticky;top:0;z-index:120;background:rgba(255,253,250,.86);
+  backdrop-filter:saturate(150%) blur(14px);border-bottom:1px solid transparent;
+  transition:box-shadow .35s var(--ease),border-color .35s var(--ease),padding .35s var(--ease)
+}
+.site-header.stuck{border-color:var(--line);box-shadow:0 8px 30px -22px rgba(12,30,60,.6)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:52px;height:52px;transition:transform .6s var(--ease)}
+.site-header.stuck .brand img{width:44px;height:44px}
+.brand:hover img{transform:rotate(-8deg) scale(1.06)}
+.brand-txt{display:flex;flex-direction:column;line-height:1.05}
+.brand-name{font-family:"Fraunces",serif;font-size:21px;font-weight:600;letter-spacing:.055em;color:var(--navy)}
+.brand-sub{font-size:10.5px;letter-spacing:.24em;color:var(--steel);text-transform:uppercase;margin-top:3px;white-space:nowrap}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a:not(.btn){text-decoration:none;font-size:15.5px;font-weight:500;color:var(--ink);padding:6px 0;position:relative;transition:color .25s}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:width .35s var(--ease);border-radius:2px}
+.nav a:not(.btn):hover,.nav a:not(.btn).active{color:var(--navy)}
+.nav a:not(.btn):hover::after,.nav a:not(.btn).active::after{width:100%}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;
+  font-family:inherit;font-weight:600;font-size:15.5px;padding:13px 26px;border-radius:100px;
+  border:1.5px solid transparent;cursor:pointer;position:relative;white-space:nowrap;flex:none;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s,color .3s
+}
+.btn span{position:relative;z-index:1}
+.btn-gold{background:var(--gold);color:#fff;box-shadow:0 10px 24px -14px rgba(200,145,47,.9)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 16px 30px -14px rgba(200,145,47,.95);background:var(--gold-lit)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{transform:translateY(-3px);background:var(--navy-deep);box-shadow:0 16px 30px -18px rgba(12,30,60,.9)}
+.btn-outline{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-outline:hover{background:#fff;color:var(--navy);transform:translateY(-3px)}
+.btn-quiet{border-color:var(--line);color:var(--navy);background:var(--cream)}
+.btn-quiet:hover{border-color:var(--navy);transform:translateY(-3px)}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;background:var(--cream)}
+.nav-toggle i{display:block;width:20px;height:2px;background:var(--navy);margin:4px 0;border-radius:2px;transition:transform .3s var(--ease),opacity .25s}
+.nav-toggle[aria-expanded="true"] i:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] i:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ================= hero ================= */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--navy-deep)}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(75% 60% at 82% 22%, rgba(200,145,47,.20), transparent 62%),
+    radial-gradient(90% 70% at 8% 90%, rgba(30,72,140,.55), transparent 60%),
+    linear-gradient(165deg,#123058 0%,#0C1E3C 55%,#081730 100%);
+}
+.hero-seal{
+  position:absolute;right:-6%;top:8%;width:min(620px,58vw);opacity:.09;pointer-events:none;
+  animation:float 16s ease-in-out infinite;will-change:transform
+}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-26px) rotate(6deg)}}
+.hero .wrap{position:relative;padding-top:clamp(70px,10vw,120px);padding-bottom:clamp(60px,8vw,104px)}
+.hero-grid{display:grid;grid-template-columns:1.28fr .92fr;gap:clamp(34px,5vw,72px);align-items:center}
+h1{font-size:clamp(2.5rem,6vw,4.4rem);font-weight:600;font-variation-settings:"SOFT" 30,"WONK" 1,"opsz" 144}
+h1 em{font-style:italic;color:var(--gold-lit);font-variation-settings:"SOFT" 40,"WONK" 1}
+.lead{font-size:clamp(1.06rem,1.6vw,1.22rem);color:#C9D6E9;max-width:54ch;margin:26px 0 34px;font-weight:300}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-panel{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:22px;padding:30px;backdrop-filter:blur(6px)
+}
+.hero-panel h2{font-size:1.18rem;color:#fff;margin-bottom:6px}
+.hero-panel p.sm{font-size:14px;color:#A9BCD8;margin:0 0 20px}
+.hero-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.hero-panel li{display:flex;gap:14px;font-size:15.5px;color:#D7E1F0;line-height:1.45;font-weight:300}
+.hero-panel li b{color:#fff;font-weight:600}
+.chk{
+  flex:none;width:22px;height:22px;border-radius:50%;background:rgba(200,145,47,.2);
+  display:grid;place-items:center;color:var(--gold-lit);font-size:12px;margin-top:2px
+}
+.scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);color:#7F94B4;font-size:12px;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint i{display:block;width:1px;height:32px;background:linear-gradient(#7F94B4,transparent);animation:drop 2.2s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* trust strip */
+.trust{background:var(--cream);border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;align-items:center;justify-content:space-between;gap:clamp(16px,4vw,44px);padding-top:22px;padding-bottom:22px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--steel)}
+.trust-item img{height:44px;width:auto;filter:saturate(.9);transition:transform .35s var(--ease),filter .35s}
+.trust-item:hover img{transform:translateY(-3px) scale(1.06);filter:saturate(1.15)}
+.trust-item strong{display:block;color:var(--ink);font-size:15px}
+
+/* ================= secciones ================= */
+section{scroll-margin-top:96px}
+.sec{padding:clamp(66px,9vw,118px) 0}
+.sec-head{max-width:64ch;margin-bottom:clamp(38px,5vw,58px)}
+.sec-head h2{font-size:clamp(1.95rem,4.2vw,3.05rem)}
+.sec-head p{color:var(--steel);font-size:1.08rem;margin:20px 0 0;max-width:60ch;font-weight:300}
+.alt{background:var(--cream)}
+.dark-sec{background:var(--navy-deep);color:#fff}
+.dark-sec .sec-head p{color:#B6C6DD}
+
+/* divisiones */
+.divisions{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.division{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(26px,3.4vw,40px);transition:transform .4s var(--ease),box-shadow .4s var(--ease);position:relative;overflow:hidden
+}
+.division:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.division::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.division:hover::before{transform:scaleX(1)}
+.division-logo{height:56px;width:auto;margin-bottom:22px}
+.division h3{font-size:1.5rem;margin-bottom:12px}
+.division p{color:var(--steel);font-size:1rem;margin:0 0 20px;font-weight:300}
+.division ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.division li{padding-left:22px;position:relative;font-size:.99rem}
+.division li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--gold);opacity:.75}
+
+/* pestañas de servicios */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+.tab{
+  background:var(--cream);border:1px solid var(--line);border-radius:100px;padding:11px 22px;
+  font-family:inherit;font-size:15px;font-weight:500;color:var(--steel);cursor:pointer;
+  transition:transform .3s var(--ease),background .3s,color .3s,border-color .3s
+}
+.tab:hover{transform:translateY(-3px);border-color:var(--navy);color:var(--navy)}
+.tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.panel{display:none}
+.panel.on{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;animation:panelIn .55s var(--ease)}
+@keyframes panelIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.panel h3{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:16px}
+.panel p{color:var(--steel);font-weight:300;margin:0 0 18px}
+.panel ul{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:11px}
+.panel li{padding-left:26px;position:relative;font-size:1rem}
+.panel li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.panel-visual{
+  border-radius:20px;padding:clamp(28px,4vw,46px);color:#fff;position:relative;overflow:hidden;
+  background:linear-gradient(150deg,#173a६9 0%,#0C1E3C 100%);min-height:280px;display:flex;flex-direction:column;justify-content:flex-end
+}
+.panel-visual{background:linear-gradient(150deg,#173A69 0%,#0C1E3C 100%)}
+.panel-visual .big{font-family:"Fraunces",serif;font-size:clamp(2.6rem,6vw,4rem);line-height:1;color:var(--gold-lit)}
+.panel-visual .cap{font-size:14.5px;color:#B6C6DD;margin-top:12px;max-width:34ch;font-weight:300}
+.panel-visual img{position:absolute;right:-40px;top:-40px;width:230px;opacity:.1}
+
+/* carrusel de sectores */
+.carousel{position:relative}
+.track{
+  display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:6px 2px 22px;scrollbar-width:none;cursor:grab
+}
+.track::-webkit-scrollbar{display:none}
+.track.dragging{cursor:grabbing;scroll-snap-type:none}
+.card{
+  scroll-snap-align:start;flex:0 0 clamp(250px,29%,320px);
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:20px;padding:28px;transition:transform .4s var(--ease),background .4s,border-color .4s
+}
+.card:hover{transform:translateY(-8px);background:rgba(255,255,255,.11);border-color:rgba(227,172,66,.55)}
+.card .ico{width:44px;height:44px;border-radius:14px;background:rgba(227,172,66,.16);display:grid;place-items:center;margin-bottom:18px;color:var(--gold-lit)}
+.card h3{font-size:1.22rem;color:#fff;margin-bottom:10px}
+.card p{margin:0;font-size:.96rem;color:#B6C6DD;font-weight:300}
+.car-nav{display:flex;gap:10px;align-items:center;margin-top:8px}
+.car-btn{
+  width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:transparent;
+  color:#fff;cursor:pointer;display:grid;place-items:center;transition:transform .3s var(--ease),background .3s,border-color .3s
+}
+.car-btn:hover{background:var(--gold);border-color:var(--gold);transform:scale(1.08)}
+.dots{display:flex;gap:8px;margin-left:auto}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);border:0;padding:0;cursor:pointer;transition:width .35s var(--ease),background .35s}
+.dot.on{width:26px;border-radius:100px;background:var(--gold-lit)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:56px}
+.stat{border-top:2px solid rgba(255,255,255,.15);padding-top:20px;transition:border-color .4s}
+.stat:hover{border-color:var(--gold)}
+.stat .n{font-family:"Fraunces",serif;font-size:clamp(2.1rem,4.4vw,3.1rem);line-height:1;color:#fff}
+.stat .l{font-size:13.5px;letter-spacing:.12em;text-transform:uppercase;color:#8CA2C2;margin-top:10px;display:block}
+
+/* ================= mapa ================= */
+.map-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,52px);align-items:start}
+.map-holder{position:relative;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line);padding:8px;box-shadow:var(--shadow-soft)}
+.map-holder img.mapa{width:100%}
+.hot{
+  position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;
+  border:2px solid transparent;background:transparent;padding:0;cursor:pointer;
+  transition:border-color .3s var(--ease),transform .3s var(--ease),box-shadow .3s
+}
+.hot::after{
+  content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--gold);
+  opacity:0;transform:scale(.6);transition:opacity .35s,transform .35s var(--ease)
+}
+.hot:hover,.hot.on{border-color:var(--gold);transform:scale(1.12);box-shadow:0 0 0 6px rgba(200,145,47,.16)}
+.hot.on::after{opacity:1;animation:ring 1.8s ease-out infinite}
+@keyframes ring{0%{transform:scale(.7);opacity:.9}100%{transform:scale(1.9);opacity:0}}
+.deleg-panel{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:24px 26px;margin-bottom:22px;
+  min-height:112px;box-shadow:var(--shadow-soft)
+}
+.deleg-panel h3{font-size:1.35rem;margin-bottom:4px;color:var(--navy)}
+.deleg-panel p{margin:0;color:var(--steel);font-size:.97rem;font-weight:300}
+.deleg-panel .z{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;display:block}
+.deleg-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.deleg-list button{
+  background:var(--cream);border:1px solid var(--line);border-radius:100px;padding:8px 16px;
+  font-family:inherit;font-size:14.5px;color:var(--steel);cursor:pointer;
+  transition:transform .28s var(--ease),background .28s,color .28s,border-color .28s
+}
+.deleg-list button:hover,.deleg-list button.on{background:var(--navy);border-color:var(--navy);color:#fff;transform:translateY(-2px)}
+
+/* ================= calidad ================= */
+.quality{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,4vw,60px);align-items:start}
+.reasons{display:grid;gap:14px}
+.reason{
+  background:var(--sand);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;
+  display:flex;gap:18px;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s
+}
+.reason:hover{transform:translateX(6px);box-shadow:var(--shadow-soft);background:var(--cream)}
+.reason .num{font-family:"Fraunces",serif;font-size:1.5rem;color:var(--gold);line-height:1;flex:none;width:34px}
+.reason h3{font-size:1.1rem;margin-bottom:5px}
+.reason p{margin:0;color:var(--steel);font-size:.95rem;font-weight:300}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:22px 0}
+.cert{
+  background:var(--sand);border:1px solid var(--line);border-radius:var(--r-sm);padding:16px;
+  display:flex;align-items:center;gap:14px;transition:transform .35s var(--ease),border-color .35s
+}
+.cert:hover{transform:translateY(-4px);border-color:var(--gold)}
+.cert img{height:52px;width:auto}
+.cert span{font-size:13.5px;color:var(--steel);line-height:1.35}
+.cert b{display:block;color:var(--ink);font-size:15px}
+.dgp-badge{
+  background:linear-gradient(140deg,var(--navy),var(--navy-deep));color:#fff;border-radius:var(--r);
+  padding:26px 28px;display:flex;gap:20px;align-items:center
+}
+.dgp-badge img{width:62px;flex:none}
+.dgp-badge .k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-lit);display:block;margin-bottom:6px}
+.dgp-badge p{margin:6px 0 0;font-size:14px;color:#C0D0E6;font-weight:300}
+.dgp-badge strong{font-family:"Fraunces",serif;font-size:1.5rem}
+
+/* ================= faq ================= */
+.faq{max-width:860px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{
+  width:100%;background:none;border:0;text-align:left;font-family:"Fraunces",serif;font-size:1.12rem;
+  font-weight:600;color:var(--ink);padding:24px 46px 24px 0;cursor:pointer;position:relative;transition:color .3s
+}
+.faq-q:hover{color:var(--navy)}
+.faq-q .plus{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--sand);display:grid;place-items:center;transition:transform .4s var(--ease),background .3s}
+.faq-q .plus::before,.faq-q .plus::after{content:"";position:absolute;background:var(--gold);border-radius:2px}
+.faq-q .plus::before{width:12px;height:2px}
+.faq-q .plus::after{width:2px;height:12px;transition:transform .4s var(--ease)}
+.faq-item.open .faq-q .plus{transform:translateY(-50%) rotate(180deg);background:var(--navy)}
+.faq-item.open .faq-q .plus::after{transform:scaleY(0)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-a p{margin:0 0 24px;color:var(--steel);font-weight:300;max-width:68ch}
+
+/* ================= formularios ================= */
+.contact-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(28px,4vw,56px);align-items:start}
+.cd{
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--r-sm);padding:18px 20px;margin-bottom:12px;
+  transition:transform .32s var(--ease),border-color .32s
+}
+.cd:hover{transform:translateX(5px);border-color:var(--gold)}
+.cd .k{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--steel);display:block;margin-bottom:5px}
+.cd a,.cd address{font-style:normal;font-size:1.05rem;text-decoration:none;font-weight:600;color:var(--navy);line-height:1.4}
+form{display:grid;gap:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{position:relative}
+.field input,.field select,.field textarea{
+  width:100%;padding:22px 16px 10px;border:1px solid var(--line);border-radius:var(--r-sm);
+  font-family:inherit;font-size:16px;background:var(--cream);color:var(--ink);transition:border-color .3s,box-shadow .3s
+}
+.field textarea{min-height:130px;resize:vertical;padding-top:26px}
+.field label{
+  position:absolute;left:16px;top:15px;font-size:16px;color:var(--steel);pointer-events:none;
+  transition:transform .25s var(--ease),font-size .25s var(--ease),color .25s
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--navy);outline:none;box-shadow:0 0 0 4px rgba(20,49,95,.1)}
+.field input:focus+label,.field textarea:focus+label,
+.field input:not(:placeholder-shown)+label,.field textarea:not(:placeholder-shown)+label,
+.field select+label,.field input[type="date"]+label{transform:translateY(-11px);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}
+.dark-sec .field input,.dark-sec .field select,.dark-sec .field textarea{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#fff}
+.dark-sec .field label{color:#9DB2CF}
+.dark-sec .field input:focus,.dark-sec .field select:focus,.dark-sec .field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(200,145,47,.18)}
+.dark-sec .field input:focus+label,.dark-sec .field input:not(:placeholder-shown)+label,
+.dark-sec .field textarea:focus+label,.dark-sec .field textarea:not(:placeholder-shown)+label,
+.dark-sec .field select+label,.dark-sec .field input[type="date"]+label{color:var(--gold-lit)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--steel)}
+.dark-sec .consent{color:#9DB2CF}
+.consent input{width:18px;height:18px;flex:none;margin-top:3px;accent-color:var(--gold)}
+.consent a{color:var(--navy);font-weight:600}
+.dark-sec .consent a{color:var(--gold-lit)}
+.err{color:#B4342B;font-size:13px;margin:6px 0 0;display:none}
+.err.show{display:block}
+.dark-sec .err{color:#F2A79F}
+
+/* asistente de empleo */
+.wizard{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:clamp(26px,3.6vw,42px);max-width:860px}
+.steps{display:flex;align-items:center;gap:0;margin-bottom:32px}
+.step-dot{display:flex;align-items:center;gap:12px;flex:1}
+.step-dot:last-child{flex:0}
+.step-dot .b{
+  width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.28);display:grid;place-items:center;
+  font-size:15px;color:#9DB2CF;flex:none;transition:all .4s var(--ease)
+}
+.step-dot .t{font-size:13.5px;color:#9DB2CF;white-space:nowrap;transition:color .4s}
+.step-dot .bar{height:2px;background:rgba(255,255,255,.16);flex:1;margin:0 14px;border-radius:2px;position:relative;overflow:hidden}
+.step-dot .bar::after{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .55s var(--ease)}
+.step-dot.done .bar::after{transform:scaleX(1)}
+.step-dot.act .b,.step-dot.done .b{border-color:var(--gold);background:var(--gold);color:#fff}
+.step-dot.act .t,.step-dot.done .t{color:#fff}
+.step{display:none}
+.step.on{display:grid;gap:18px;animation:stepIn .45s var(--ease)}
+@keyframes stepIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.wiz-nav{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.done-box{display:none;text-align:center;padding:20px 0}
+.done-box.on{display:block;animation:stepIn .5s var(--ease)}
+.tick-circle{width:76px;height:76px;border-radius:50%;border:2px solid var(--gold);margin:0 auto 22px;display:grid;place-items:center}
+.tick-circle svg{width:36px;height:36px}
+.tick-circle path{stroke-dasharray:48;stroke-dashoffset:48;animation:draw .7s .15s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.done-box h3{color:#fff;font-size:1.6rem;margin-bottom:10px}
+.done-box p{color:#B6C6DD;font-weight:300;margin:0}
+
+/* footer */
+footer{background:var(--navy-night);color:#9DB2CF;font-size:15px}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:38px;padding:clamp(50px,6vw,78px) 0 44px}
+footer h3{font-family:"Source Sans 3",sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-lit);font-weight:600;margin-bottom:18px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+footer a{text-decoration:none;transition:color .25s,transform .25s;display:inline-block}
+footer a:hover{color:#fff;transform:translateX(4px)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding:22px 0;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px}
+.foot-legal{display:flex;gap:24px;flex-wrap:wrap}
+.up{
+  position:fixed;right:24px;bottom:24px;width:50px;height:50px;border-radius:50%;background:var(--navy);color:#fff;
+  border:0;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow);opacity:0;pointer-events:none;
+  transform:translateY(14px);transition:opacity .4s,transform .4s var(--ease),background .3s;z-index:110
+}
+.up.on{opacity:1;pointer-events:auto;transform:none}
+.up:hover{background:var(--gold)}
+
+/* revelado */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv[data-d="1"]{transition-delay:.1s}.rv[data-d="2"]{transition-delay:.2s}.rv[data-d="3"]{transition-delay:.3s}
+
+/* responsive */
+@media (max-width:1000px){
+  .hero-grid,.map-layout,.quality,.contact-layout,.panel.on{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .hero-seal{opacity:.06}
+}
+@media (max-width:760px){
+  body{font-size:16.5px}
+  .nav{
+    position:fixed;inset:70px 0 auto;background:var(--cream);flex-direction:column;align-items:stretch;gap:0;
+    padding:8px var(--pad) 24px;border-bottom:1px solid var(--line);display:none;box-shadow:var(--shadow)
+  }
+  .nav.open{display:flex;animation:panelIn .35s var(--ease)}
+  .nav a:not(.btn){padding:15px 0;border-bottom:1px solid var(--line)}
+  .nav .btn{margin-top:16px}
+  .nav-toggle{display:block}
+  .divisions,.row,.cert-grid{grid-template-columns:1fr}
+  .card{flex:0 0 82%}
+  .topbar .wrap{justify-content:center;text-align:center;gap:8px}
+  .foot-top{grid-template-columns:1fr;gap:32px}
+  .step-dot .t{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Homologada D.G.P. <strong class="gold">Nº 4589</strong> · Profesionales del sector desde 1986</span>
+    <div class="topbar-links">
+      <a href="tel:+34935029865">Central <strong>93 502 98 65</strong></a>
+      <a href="tel:+34605123075">Comercial <strong>605 12 30 75</strong></a>
+      <a href="mailto:direccioncomercial@progesa.es"><strong>direccioncomercial@progesa.es</strong></a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Progesa Seguridad, inicio">
+      <img src="img/logo-progesa.png" alt="Sello de Progesa Seguridad — Securitatem Procuratio" width="52" height="52">
+      <span class="brand-txt">
+        <span class="brand-name">PROGESA</span>
+        <span class="brand-sub">Securitatem · Procuratio</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <i></i><i></i><i></i>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#empresa">Empresa</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#delegaciones">Delegaciones</a>
+      <a href="#calidad">Calidad</a>
+      <a href="#empleo">Empleo</a>
+      <a class="btn btn-navy" href="#contacto"><span>Pedir presupuesto</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <img class="hero-seal" src="img/logo-progesa.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow rv">Seguridad privada · Servicios auxiliares</p>
+        <h1 class="rv" data-d="1">Detrás de cada turno hay <em>personas</em>, no solo cámaras.</h1>
+        <p class="lead rv" data-d="2">Vigilantes de seguridad, rondas, servicio de acuda y control de accesos para puertos, aeropuertos, industria y logística. Cobertura en 23 delegaciones de toda España, con un interlocutor que coge el teléfono.</p>
+        <div class="hero-cta rv" data-d="3">
+          <a class="btn btn-gold" href="#contacto"><span>Solicitar propuesta</span></a>
+          <a class="btn btn-outline" href="#empleo"><span>Trabaja con nosotros</span></a>
+        </div>
+      </div>
+
+      <div class="hero-panel rv" data-d="2">
+        <h2>Acreditaciones</h2>
+        <p class="sm">Lo que nos permite estar donde estamos.</p>
+        <ul>
+          <li><span class="chk">✓</span><span>Empresa homologada por la <b>D.G.P. nº 4589</b> para la vigilancia y protección de bienes y personas en todo el territorio del Estado.</span></li>
+          <li><span class="chk">✓</span><span>Sistemas de gestión implantados bajo <b>ISO 9001, 14001, 45001 y 27001</b>.</span></li>
+          <li><span class="chk">✓</span><span>Un equipo con experiencia acumulada en el sector <b>desde 1986</b>.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span>Descubra</span><i></i></div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><img src="img/cert-9001.png" alt="Certificado G-CERT ISO 9001"><span><strong>ISO 9001</strong>Calidad</span></div>
+    <div class="trust-item"><img src="img/cert-14001.png" alt="Certificado G-CERT ISO 14001"><span><strong>ISO 14001</strong>Medio ambiente</span></div>
+    <div class="trust-item"><img src="img/cert-45001.png" alt="Certificado G-CERT ISO 45001"><span><strong>ISO 45001</strong>Seguridad y salud</span></div>
+    <div class="trust-item"><img src="img/cert-27001.png" alt="Certificado ACCM ISO 27001"><span><strong>ISO 27001</strong>Información</span></div>
+    <div class="trust-item"><img src="img/logo-progesa.png" alt="Sello de homologación de Progesa Seguridad"><span><strong>D.G.P. Nº 4589</strong>Empresa homologada</span></div>
+  </div>
+</div>
+
+<!-- ============ EMPRESA ============ -->
+<section class="sec alt" id="empresa">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">La corporación</p>
+      <h2>Dos divisiones, una sola forma de trabajar</h2>
+      <p>La Corporación Empresarial Progesa cubre los servicios que una empresa necesita externalizar sin perder el control: seguridad homologada por un lado, personal auxiliar cualificado por otro. Trato individualizado, servicio selectivo y mejora continua sobre necesidades reales.</p>
+    </div>
+
+    <div class="divisions">
+      <article class="division rv">
+        <img class="division-logo" src="img/logo-progesa.png" alt="Sello Progesa Seguridad" style="height:66px">
+        <h3>Progesa Seguridad</h3>
+        <p>División de seguridad privada homologada por la Dirección General de la Policía con el número 4589, autorizada para la vigilancia y protección de bienes y personas en todo el ámbito territorial del Estado.</p>
+        <ul>
+          <li>Vigilantes de seguridad habilitados</li>
+          <li>Rondas con control de puntos y trazabilidad</li>
+          <li>Servicio de acuda conectado a central receptora</li>
+          <li>Circuito cerrado de televisión y sistemas de control</li>
+        </ul>
+      </article>
+
+      <article class="division rv" data-d="1">
+        <img class="division-logo" src="img/aux-logo.png" alt="Logotipo de Progesa Auxiliares">
+        <h3>Progesa Auxiliar de Servicios</h3>
+        <p>División dedicada a integrarse en el sistema del cliente y cubrir con personal cualificado los servicios que su actividad productiva le obliga a externalizar.</p>
+        <ul>
+          <li>Controladores de acceso en puertos y aeropuertos</li>
+          <li>Recepcionistas, telefonistas y conserjes</li>
+          <li>Auxiliares de servicio y personal de apoyo</li>
+          <li>Perfiles especializados a medida de cada organización</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS (pestañas) ============ -->
+<section class="sec" id="servicios">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Servicios</p>
+      <h2>Qué hacemos cada turno</h2>
+      <p>Cada servicio se diseña sobre un análisis previo de la instalación y se entrega con parte, trazabilidad y una persona de contacto.</p>
+    </div>
+
+    <div class="tabs rv" role="tablist" aria-label="Servicios de Progesa">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="t1">Vigilancia</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2">Rondas</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="t3">Servicio de acuda</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p4" id="t4">Control de accesos</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p5" id="t5">Auxiliares</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p6" id="t6">Análisis</button>
+    </div>
+
+    <div class="panel on" id="p1" role="tabpanel" aria-labelledby="t1">
+      <div>
+        <h3>Vigilancia y protección</h3>
+        <p>Vigilantes de seguridad en instalaciones fijas, apoyados en sistemas de control y circuito cerrado de televisión para la protección de bienes, instalaciones y personas.</p>
+        <ul>
+          <li>Personal habilitado y uniformado</li>
+          <li>Puestos de 8, 12 o 24 horas</li>
+          <li>Protocolos adaptados a su normativa interna</li>
+          <li>Parte de incidencias en cada relevo</li>
+        </ul>
+        <a class="btn btn-quiet" href="#contacto"><span>Consultar disponibilidad</span></a>
+      </div>
+      <div class="panel-visual">
+        <img src="img/logo-progesa.png" alt="" aria-hidden="true">
+        <span class="big">24/7</span>
+        <p class="cap">Cobertura continua con relevos planificados y sustituciones garantizadas.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+      <div>
+        <h3>Rondas de vigilancia</h3>
+        <p>Recorridos que el personal de seguridad efectúa durante el servicio con la finalidad de controlar puntos, zonas o áreas determinadas, permitiendo detectar situaciones de riesgo antes de que se conviertan en incidencia.</p>
+        <ul>
+          <li>Control de puntos verificable</li>
+          <li>Consulta de rutas en tiempo real mediante web</li>
+          <li>Frecuencias aleatorias para evitar patrones</li>
+          <li>Informe periódico de recorridos</li>
+        </ul>
+        <a class="btn btn-quiet" href="#contacto"><span>Ver cómo se auditan</span></a>
+      </div>
+      <div class="panel-visual">
+        <img src="img/logo-progesa.png" alt="" aria-hidden="true">
+        <span class="big">En vivo</span>
+        <p class="cap">Las rutas de ronda se consultan en tiempo real desde el navegador.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+      <div>
+        <h3>Servicio de acuda</h3>
+        <p>Asociado a la conexión con una central receptora de alarmas. Ante cualquier incidencia detectada por los sistemas conectados, un vigilante de seguridad acude a la instalación con las llaves en un sobre cerrado debidamente codificado.</p>
+        <ul>
+          <li>Apertura en presencia de las Fuerzas y Cuerpos de Seguridad del Estado</li>
+          <li>Comprobación de la situación y medidas de protección</li>
+          <li>Comunicación permanente con la central receptora</li>
+          <li>Informe de la actuación</li>
+        </ul>
+        <a class="btn btn-quiet" href="#contacto"><span>Conectar mi instalación</span></a>
+      </div>
+      <div class="panel-visual">
+        <img src="img/logo-progesa.png" alt="" aria-hidden="true">
+        <span class="big">Acuda</span>
+        <p class="cap">De la señal de alarma a la verificación presencial, sin intermediarios.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p4" role="tabpanel" aria-labelledby="t4" hidden>
+      <div>
+        <h3>Control de accesos</h3>
+        <p>Controladores de acceso para puertos, aeropuertos, polígonos, obras y sedes corporativas: identificación, registro de entradas y salidas y gestión de visitas y proveedores.</p>
+        <ul>
+          <li>Personal formado en entornos portuarios y aeroportuarios</li>
+          <li>Gestión de matrículas, visitas y transportistas</li>
+          <li>Integración con sus sistemas de registro</li>
+          <li>Atención en varios idiomas</li>
+        </ul>
+        <a class="btn btn-quiet" href="#contacto"><span>Dimensionar el puesto</span></a>
+      </div>
+      <div class="panel-visual">
+        <img src="img/logo-progesa.png" alt="" aria-hidden="true">
+        <span class="big">Puertos</span>
+        <p class="cap">Experiencia específica en terminales portuarias y aeroportuarias.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p5" role="tabpanel" aria-labelledby="t5" hidden>
+      <div>
+        <h3>Servicios auxiliares</h3>
+        <p>Provisión de personal altamente capacitado para aquellos servicios que, por la naturaleza de su actividad productiva, resulta más eficiente externalizar.</p>
+        <ul>
+          <li>Recepcionistas y telefonistas</li>
+          <li>Conserjes y auxiliares de servicio</li>
+          <li>Personal de apoyo en eventos</li>
+          <li>Perfiles especializados a medida</li>
+        </ul>
+        <a class="btn btn-quiet" href="#contacto"><span>Pedir perfiles</span></a>
+      </div>
+      <div class="panel-visual">
+        <img src="img/aux-logo.png" alt="" aria-hidden="true">
+        <span class="big">Su imagen</span>
+        <p class="cap">Personal integrado en su operativa, su uniformidad y su trato al cliente.</p>
+      </div>
+    </div>
+
+    <div class="panel" id="p6" role="tabpanel" aria-labelledby="t6" hidden>
+      <div>
+        <h3>Análisis previo</h3>
+        <p>Estudiamos la instalación, sus puntos críticos y sus horarios antes de proponer dispositivo, plantilla y medios técnicos. Los proyectos se basan en escuchar al cliente y darle la mejor alternativa a sus necesidades.</p>
+        <ul>
+          <li>Visita técnica sin coste</li>
+          <li>Identificación de puntos críticos</li>
+          <li>Propuesta con dispositivo dimensionado</li>
+          <li>Presupuesto cerrado</li>
+        </ul>
+        <a class="btn btn-quiet" href="#contacto"><span>Pedir visita técnica</span></a>
+      </div>
+      <div class="panel-visual">
+        <img src="img/logo-progesa.png" alt="" aria-hidden="true">
+        <span class="big">Paso 1</span>
+        <p class="cap">Sin análisis no hay presupuesto. Nunca vendemos horas a ciegas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTORES (carrusel) ============ -->
+<section class="sec dark-sec" id="sectores">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Sectores</p>
+      <h2>Dónde trabajamos</h2>
+      <p>Entornos con turnos largos, alta rotación de vehículos y personas, y tolerancia cero a la incidencia.</p>
+    </div>
+
+    <div class="carousel rv">
+      <div class="track" id="track">
+        <article class="card"><div class="ico">⚓</div><h3>Terminales portuarias</h3><p>Control de accesos, rondas de campa y verificación de transportistas en entorno 24 horas.</p></article>
+        <article class="card"><div class="ico">✈</div><h3>Aeropuertos</h3><p>Auxiliares de servicio y controladores de acceso en zonas restringidas y áreas de pasajeros.</p></article>
+        <article class="card"><div class="ico">▦</div><h3>Logística y última milla</h3><p>Protección de naves, muelles de carga y flota en horario nocturno y fines de semana.</p></article>
+        <article class="card"><div class="ico">⬢</div><h3>Polígonos industriales</h3><p>Rondas compartidas, acuda y respuesta ante alarma para varias empresas del mismo recinto.</p></article>
+        <article class="card"><div class="ico">⬒</div><h3>Automoción y campas</h3><p>Vigilancia de campas de vehículos, control de matrículas y trazabilidad de movimientos.</p></article>
+        <article class="card"><div class="ico">▣</div><h3>Sedes corporativas</h3><p>Recepción, control de visitas y vigilancia con la imagen y el trato que su marca requiere.</p></article>
+        <article class="card"><div class="ico">▲</div><h3>Obra y construcción</h3><p>Protección de material y maquinaria en obra abierta, con rondas nocturnas y festivos.</p></article>
+        <article class="card"><div class="ico">◈</div><h3>Retail y centros comerciales</h3><p>Prevención de pérdida, control de aforo y apoyo en apertura y cierre.</p></article>
+      </div>
+
+      <div class="car-nav">
+        <button class="car-btn" id="prev" aria-label="Sector anterior">←</button>
+        <button class="car-btn" id="next" aria-label="Sector siguiente">→</button>
+        <div class="dots" id="dots" role="tablist" aria-label="Paginación de sectores"></div>
+      </div>
+    </div>
+
+    <div class="stats rv">
+      <div class="stat"><span class="n" data-count="23">0</span><span class="l">Delegaciones</span></div>
+      <div class="stat"><span class="n" data-count="4589" data-plain="1">0</span><span class="l">Homologación D.G.P.</span></div>
+      <div class="stat"><span class="n" data-count="4">0</span><span class="l">Normas ISO implantadas</span></div>
+      <div class="stat"><span class="n" data-count="1986" data-plain="1">0</span><span class="l">Experiencia desde</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DELEGACIONES ============ -->
+<section class="sec alt" id="delegaciones">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Representación nacional</p>
+      <h2>23 delegaciones, un solo interlocutor</h2>
+      <p>Progesa cubre el territorio nacional con estructura propia en península, Baleares y Canarias. Pulse una ciudad o un punto del mapa para verla.</p>
+    </div>
+
+    <div class="map-layout rv">
+      <div class="map-holder" id="mapHolder">
+        <img class="mapa" src="img/mapa-delegaciones.jpg" alt="Mapa de España con las 23 delegaciones de Progesa Seguridad" width="846" height="648" loading="lazy">
+      </div>
+
+      <div>
+        <div class="deleg-panel" id="delegPanel" aria-live="polite">
+          <span class="z">Delegación</span>
+          <h3 id="dpName">Barcelona</h3>
+          <p id="dpTxt">Sede central de la corporación en L'Hospitalet de Llobregat. Coordinación de servicios en Cataluña y enlace con el resto de delegaciones.</p>
+        </div>
+        <ul class="deleg-list" id="delegList"></ul>
+        <p style="margin-top:22px;font-size:15px;color:var(--steel)">¿Su instalación está fuera de estas ciudades? Damos servicio en todo el territorio nacional desde la delegación más próxima. <a href="#contacto" style="color:var(--navy);font-weight:600">Consúltenos</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALIDAD ============ -->
+<section class="sec" id="calidad">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Por qué elegirnos</p>
+      <h2>Calidad certificada, no prometida</h2>
+      <p>Progesa presta sus servicios implantando las normas ISO 9001, 14001, 45001 y 27001, cumpliendo los estándares de calidad en evolución continua.</p>
+    </div>
+
+    <div class="quality">
+      <div class="reasons rv">
+        <div class="reason"><span class="num">01</span><div><h3>Servicio selectivo</h3><p>El dispositivo se dimensiona sobre necesidades reales: ni un vigilante de más ni una hora sin cubrir.</p></div></div>
+        <div class="reason"><span class="num">02</span><div><h3>Integración en su política interna</h3><p>Nuestro personal trabaja dentro de sus normas de seguridad, sus procedimientos y su imagen.</p></div></div>
+        <div class="reason"><span class="num">03</span><div><h3>Trazabilidad de la ronda</h3><p>Control de puntos y consulta de rutas en tiempo real, con parte de incidencias documentado.</p></div></div>
+        <div class="reason"><span class="num">04</span><div><h3>Respuesta inmediata</h3><p>Coordinación permanente con la central receptora y con las Fuerzas y Cuerpos de Seguridad del Estado.</p></div></div>
+      </div>
+
+      <div class="rv" data-d="1">
+        <div class="dgp-badge">
+          <img src="img/logo-progesa.png" alt="Sello de Progesa Seguridad">
+          <div>
+            <span class="k">Homologación</span>
+            <strong>D.G.P. Nº 4589</strong>
+            <p>Autorizada para desarrollar actividades de vigilancia y protección de bienes y personas en todo el ámbito territorial del Estado.</p>
+          </div>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert"><img src="img/cert-9001.png" alt="Certificado ISO 9001"><span><b>ISO 9001</b>Gestión de la calidad</span></div>
+          <div class="cert"><img src="img/cert-14001.png" alt="Certificado ISO 14001"><span><b>ISO 14001</b>Gestión ambiental</span></div>
+          <div class="cert"><img src="img/cert-45001.png" alt="Certificado ISO 45001"><span><b>ISO 45001</b>Seguridad y salud</span></div>
+          <div class="cert"><img src="img/cert-27001.png" alt="Certificado ISO 27001"><span><b>ISO 27001</b>Seguridad de la información</span></div>
+        </div>
+
+        <a class="btn btn-navy" href="https://www.progesa.es/politicacalidad" rel="noopener"><span>Leer la Política de Calidad</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que nos preguntan antes de contratar</h2>
+    </div>
+    <div class="faq rv" id="faq">
+      <div class="faq-item open">
+        <button class="faq-q" aria-expanded="true">¿Qué es el servicio de acuda y cuándo se activa?<span class="plus"></span></button>
+        <div class="faq-a"><p>Es el servicio asociado a la conexión con una central receptora de alarmas. Ante cualquier incidencia detectada por los sistemas conectados, un vigilante de seguridad acude a la instalación con las llaves en un sobre cerrado debidamente codificado, que abre en presencia de las Fuerzas y Cuerpos de Seguridad del Estado para comprobar la situación y adoptar las medidas de protección necesarias, previa comunicación e indicaciones de la central receptora.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Progesa está habilitada para prestar servicio en toda España?<span class="plus"></span></button>
+        <div class="faq-a"><p>Sí. Progesa es una empresa homologada por la Dirección General de la Policía con el número 4589, autorizada para desarrollar actividades de vigilancia y protección de bienes y personas en todo el ámbito territorial del Estado, y cuenta con 23 delegaciones repartidas por península, Baleares y Canarias.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Qué diferencia hay entre un vigilante de seguridad y un controlador de acceso?<span class="plus"></span></button>
+        <div class="faq-a"><p>El vigilante de seguridad es personal habilitado dentro del ámbito de la seguridad privada. El controlador de acceso es personal auxiliar que gestiona la identificación, el registro y el flujo de entradas y salidas, sin funciones de seguridad privada. Progesa presta ambos perfiles desde dos divisiones distintas para que cada necesidad se cubra con la figura legalmente correcta.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Se pueden auditar las rondas de vigilancia?<span class="plus"></span></button>
+        <div class="faq-a"><p>Sí. Las rondas se ejecutan con control de puntos sobre zonas o áreas determinadas y las rutas pueden consultarse en tiempo real mediante web, además del parte de incidencias de cada turno.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">¿Cuánto cuesta un servicio de seguridad privada?<span class="plus"></span></button>
+        <div class="faq-a"><p>Depende del número de horas, del tipo de puesto, del nivel de riesgo de la instalación y de los medios técnicos asociados. Realizamos un análisis previo de la instalación y entregamos un presupuesto cerrado con el dispositivo dimensionado. Escríbanos a direccioncomercial@progesa.es o llame al 605 12 30 75.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="sec" id="contacto">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Contacto</p>
+      <h2>Cuéntenos qué hay que proteger</h2>
+      <p>Un responsable comercial le responde con propuesta y dispositivo dimensionado. Sin compromiso.</p>
+    </div>
+
+    <div class="contact-layout rv">
+      <div>
+        <div class="cd"><span class="k">Oficina central</span><a href="tel:+34935029865">93 502 98 65</a></div>
+        <div class="cd"><span class="k">Dirección comercial</span><a href="tel:+34605123075">605 12 30 75</a></div>
+        <div class="cd"><span class="k">Jefe de Seguridad</span><a href="tel:+34678769760">678 76 97 60</a></div>
+        <div class="cd"><span class="k">Email</span><a href="mailto:direccioncomercial@progesa.es">direccioncomercial@progesa.es</a></div>
+        <div class="cd"><span class="k">Sede</span><address>Calle Santa Eulalia 14, entresuelo A<br>08902 L'Hospitalet de Llobregat, Barcelona</address></div>
+      </div>
+
+      <form id="formContacto" novalidate>
+        <div class="row">
+          <div class="field"><input id="c-nombre" name="nombre" type="text" placeholder=" " required autocomplete="name"><label for="c-nombre">Nombre y apellidos *</label></div>
+          <div class="field"><input id="c-empresa" name="empresa" type="text" placeholder=" " autocomplete="organization"><label for="c-empresa">Empresa</label></div>
+        </div>
+        <div class="row">
+          <div class="field"><input id="c-email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="c-email">Email *</label></div>
+          <div class="field"><input id="c-tel" name="telefono" type="tel" placeholder=" " autocomplete="tel"><label for="c-tel">Teléfono</label></div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <select id="c-servicio" name="servicio">
+              <option>Vigilancia y protección</option><option>Rondas de vigilancia</option>
+              <option>Servicio de acuda</option><option>Control de accesos</option>
+              <option>Servicios auxiliares</option><option>Otro / no lo tengo claro</option>
+            </select><label for="c-servicio">Servicio que necesita</label>
+          </div>
+          <div class="field"><input id="c-ciudad" name="ciudad" type="text" placeholder=" "><label for="c-ciudad">Localidad del servicio</label></div>
+        </div>
+        <div class="field"><textarea id="c-msg" name="mensaje" placeholder=" "></textarea><label for="c-msg">Mensaje</label></div>
+        <label class="consent">
+          <input type="checkbox" required id="c-lopd">
+          <span>He leído y acepto la <a href="https://www.progesa.es/_files/ugd/4ce52d_da07342fb1b9423797bf6dd9a9e8d74e.pdf" target="_blank" rel="noopener">Política de privacidad</a> y el tratamiento de mis datos para responder a esta consulta.</span>
+        </label>
+        <p class="err" id="errContacto">Revise los campos obligatorios y acepte la política de privacidad.</p>
+        <div><button class="btn btn-gold" type="submit"><span>Enviar consulta</span></button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMPLEO (asistente) ============ -->
+<section class="sec dark-sec" id="empleo">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Trabaja con nosotros</p>
+      <h2>Buscamos gente que no se relaja en el turno de noche</h2>
+      <p>Incorporamos vigilantes de seguridad habilitados, controladores de acceso y personal auxiliar en nuestras 23 delegaciones. Tres pasos, dos minutos.</p>
+    </div>
+
+    <div class="wizard rv">
+      <div class="steps" id="steps">
+        <div class="step-dot act"><span class="b">1</span><span class="t">Sus datos</span><span class="bar"></span></div>
+        <div class="step-dot"><span class="b">2</span><span class="t">Puesto</span><span class="bar"></span></div>
+        <div class="step-dot"><span class="b">3</span><span class="t">Currículum</span></div>
+      </div>
+
+      <form id="formEmpleo" novalidate>
+        <div class="step on" data-step="1">
+          <div class="row">
+            <div class="field"><input id="e-nombre" name="nombre" type="text" placeholder=" " required autocomplete="given-name"><label for="e-nombre">Nombre *</label></div>
+            <div class="field"><input id="e-apellidos" name="apellidos" type="text" placeholder=" " required autocomplete="family-name"><label for="e-apellidos">Apellidos *</label></div>
+          </div>
+          <div class="row">
+            <div class="field"><input id="e-email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="e-email">Email *</label></div>
+            <div class="field"><input id="e-tel" name="telefono" type="tel" placeholder=" " required autocomplete="tel"><label for="e-tel">Teléfono *</label></div>
+          </div>
+          <p class="err">Complete nombre, apellidos, email y teléfono.</p>
+          <div class="wiz-nav"><span></span><button type="button" class="btn btn-gold" data-next><span>Continuar</span></button></div>
+        </div>
+
+        <div class="step" data-step="2">
+          <div class="row">
+            <div class="field">
+              <select id="e-puesto" name="puesto">
+                <option>Vigilante de seguridad</option><option>Vigilante con TIP y arma</option>
+                <option>Controlador de acceso</option><option>Auxiliar de servicios</option>
+                <option>Recepción / telefonía</option><option>Estructura y administración</option>
+              </select><label for="e-puesto">Puesto que solicita</label>
+            </div>
+            <div class="field"><select id="e-deleg" name="delegacion" data-deleg></select><label for="e-deleg">Delegación</label></div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <select id="e-exp" name="experiencia">
+                <option>Sin experiencia previa</option><option>Menos de 1 año</option>
+                <option>1 a 3 años</option><option>3 a 10 años</option><option>Más de 10 años</option>
+              </select><label for="e-exp">Experiencia en el sector</label>
+            </div>
+            <div class="field"><input id="e-fecha" name="disponibilidad" type="date" placeholder=" "><label for="e-fecha">Fecha de disponibilidad</label></div>
+          </div>
+          <div class="wiz-nav"><button type="button" class="btn btn-outline" data-back><span>Atrás</span></button><button type="button" class="btn btn-gold" data-next><span>Continuar</span></button></div>
+        </div>
+
+        <div class="step" data-step="3">
+          <div class="field"><input id="e-cv" name="cv" type="url" placeholder=" "><label for="e-cv">Enlace a su currículum (Drive, LinkedIn…)</label></div>
+          <div class="field"><textarea id="e-msg" name="mensaje" placeholder=" "></textarea><label for="e-msg">Cuéntenos algo sobre usted</label></div>
+          <label class="consent">
+            <input type="checkbox" required id="e-lopd">
+            <span>Acepto que Progesa conserve mis datos para procesos de selección según su <a href="https://www.progesa.es/_files/ugd/4ce52d_da07342fb1b9423797bf6dd9a9e8d74e.pdf" target="_blank" rel="noopener">Política de privacidad</a>.</span>
+          </label>
+          <p class="err">Debe aceptar la política de privacidad para enviar su candidatura.</p>
+          <div class="wiz-nav"><button type="button" class="btn btn-outline" data-back><span>Atrás</span></button><button type="submit" class="btn btn-gold"><span>Enviar candidatura</span></button></div>
+        </div>
+      </form>
+
+      <div class="done-box" id="doneBox">
+        <div class="tick-circle">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" stroke="#E3AC42" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Candidatura recibida</h3>
+        <p>Gracias. El departamento de personal revisa las candidaturas cada semana y le escribirá si su perfil encaja con alguna vacante abierta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#inicio" style="margin-bottom:18px">
+          <img src="img/logo-progesa.png" alt="Progesa Seguridad" width="52" height="52">
+          <span class="brand-txt">
+            <span class="brand-name" style="color:#fff">PROGESA</span>
+            <span class="brand-sub" style="color:#8CA2C2">Securitatem · Procuratio</span>
+          </span>
+        </a>
+        <p style="max-width:36ch;margin:0;font-weight:300">Corporación Empresarial Progesa. Seguridad privada y servicios auxiliares en todo el territorio nacional.</p>
+        <p style="color:var(--gold-lit);font-size:13px;letter-spacing:.14em;margin-top:16px">HOMOLOGACIÓN D.G.P. Nº 4589</p>
+      </div>
+
+      <div>
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="#servicios">Vigilancia y protección</a></li>
+          <li><a href="#servicios">Rondas de vigilancia</a></li>
+          <li><a href="#servicios">Servicio de acuda</a></li>
+          <li><a href="#servicios">Control de accesos</a></li>
+          <li><a href="#servicios">Servicios auxiliares</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="#empresa">Acerca de Progesa</a></li>
+          <li><a href="#calidad">Por qué elegirnos</a></li>
+          <li><a href="#delegaciones">Delegaciones</a></li>
+          <li><a href="#empleo">Trabaja con nosotros</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="tel:+34935029865">93 502 98 65 · Central</a></li>
+          <li><a href="tel:+34605123075">605 12 30 75 · Comercial</a></li>
+          <li><a href="tel:+34678769760">678 76 97 60 · Jefe de Seguridad</a></li>
+          <li><a href="mailto:direccioncomercial@progesa.es">direccioncomercial@progesa.es</a></li>
+          <li style="font-weight:300">C/ Santa Eulalia 14, entlo. A<br>08902 L'Hospitalet de Llobregat</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Corporación Empresarial Progesa. Todos los derechos reservados.</span>
+      <div class="foot-legal">
+        <a href="https://www.progesa.es/_files/ugd/4ce52d_3e76c71267ff46348fa187c88c1ecdf2.pdf" target="_blank" rel="noopener">Aviso legal</a>
+        <a href="https://www.progesa.es/_files/ugd/4ce52d_da07342fb1b9423797bf6dd9a9e8d74e.pdf" target="_blank" rel="noopener">Política de privacidad</a>
+        <a href="https://www.progesa.es/_files/ugd/4ce52d_c38a02941a9f419da1f5757a88e14550.pdf" target="_blank" rel="noopener">Política de cookies</a>
+        <a href="https://www.progesa.es/politicacalidad" rel="noopener">Política de calidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="up" id="up" aria-label="Volver arriba">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":["Organization","SecurityService","LocalBusiness"],
+      "@id":"https://www.progesa.es/#organizacion",
+      "name":"Progesa Seguridad",
+      "alternateName":["Corporación Empresarial Progesa","Progesa Auxiliar de Servicios"],
+      "url":"https://www.progesa.es/",
+      "logo":"https://www.progesa.es/img/logo-512.png",
+      "image":"https://www.progesa.es/img/logo-512.png",
+      "slogan":"Securitatem · Procuratio",
+      "description":"Empresa de seguridad privada homologada por la D.G.P. con el nº 4589, autorizada para la vigilancia y protección de bienes y personas en todo el territorio del Estado. Vigilancia, rondas, acuda, control de accesos y personal auxiliar.",
+      "foundingDate":"1986",
+      "email":"direccioncomercial@progesa.es",
+      "telephone":"+34935029865",
+      "priceRange":"$$",
+      "address":{"@type":"PostalAddress","streetAddress":"Calle Santa Eulalia 14, entresuelo A","addressLocality":"L'Hospitalet de Llobregat","addressRegion":"Barcelona","postalCode":"08902","addressCountry":"ES"},
+      "geo":{"@type":"GeoCoordinates","latitude":41.3597,"longitude":2.1006},
+      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],
+      "contactPoint":[
+        {"@type":"ContactPoint","telephone":"+34605123075","contactType":"sales","areaServed":"ES","availableLanguage":["es","ca"]},
+        {"@type":"ContactPoint","telephone":"+34678769760","contactType":"emergency","areaServed":"ES","availableLanguage":["es"]}
+      ],
+      "hasCredential":[
+        {"@type":"EducationalOccupationalCredential","credentialCategory":"Homologación D.G.P.","identifier":"4589"},
+        {"@type":"EducationalOccupationalCredential","credentialCategory":"Certificación","name":"ISO 9001"},
+        {"@type":"EducationalOccupationalCredential","credentialCategory":"Certificación","name":"ISO 14001"},
+        {"@type":"EducationalOccupationalCredential","credentialCategory":"Certificación","name":"ISO 45001"},
+        {"@type":"EducationalOccupationalCredential","credentialCategory":"Certificación","name":"ISO 27001"}
+      ],
+      "areaServed":[
+        {"@type":"City","name":"A Coruña"},{"@type":"City","name":"Gijón"},{"@type":"City","name":"Bilbao"},
+        {"@type":"City","name":"Vigo"},{"@type":"City","name":"Zaragoza"},{"@type":"City","name":"Barcelona"},
+        {"@type":"City","name":"Tarragona"},{"@type":"City","name":"Salamanca"},{"@type":"City","name":"Madrid"},
+        {"@type":"City","name":"Castellón"},{"@type":"City","name":"Sagunto"},{"@type":"City","name":"Valencia"},
+        {"@type":"City","name":"Albacete"},{"@type":"City","name":"Alicante"},{"@type":"City","name":"Murcia"},
+        {"@type":"City","name":"Córdoba"},{"@type":"City","name":"Sevilla"},{"@type":"City","name":"Almería"},
+        {"@type":"City","name":"Cádiz"},{"@type":"City","name":"Málaga"},{"@type":"City","name":"Algeciras"},
+        {"@type":"City","name":"Palma de Mallorca"},{"@type":"City","name":"Las Palmas de Gran Canaria"}
+      ],
+      "hasOfferCatalog":{
+        "@type":"OfferCatalog","name":"Servicios de seguridad privada y servicios auxiliares",
+        "itemListElement":[
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vigilancia y protección de bienes y personas"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rondas de vigilancia con control de puntos"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Servicio de acuda conectado a central receptora de alarmas"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Control de accesos en puertos y aeropuertos"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Auxiliares de servicio, recepción, telefonía y conserjería"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Análisis de riesgos y diseño del dispositivo de seguridad"}}
+        ]
+      }
+    },
+    {"@type":"WebSite","@id":"https://www.progesa.es/#website","url":"https://www.progesa.es/","name":"Progesa Seguridad","inLanguage":"es-ES","publisher":{"@id":"https://www.progesa.es/#organizacion"}},
+    {
+      "@type":"FAQPage","@id":"https://www.progesa.es/#faq",
+      "mainEntity":[
+        {"@type":"Question","name":"¿Qué es el servicio de acuda y cuándo se activa?","acceptedAnswer":{"@type":"Answer","text":"Es el servicio asociado a la conexión con una central receptora de alarmas. Ante cualquier incidencia detectada por los sistemas conectados, un vigilante de seguridad acude a la instalación con las llaves en un sobre cerrado codificado, que abre en presencia de las Fuerzas y Cuerpos de Seguridad del Estado para comprobar la situación y adoptar las medidas de protección necesarias."}},
+        {"@type":"Question","name":"¿Progesa está habilitada para prestar servicio en toda España?","acceptedAnswer":{"@type":"Answer","text":"Sí. Progesa está homologada por la Dirección General de la Policía con el número 4589 y autorizada para desarrollar actividades de vigilancia y protección de bienes y personas en todo el ámbito territorial del Estado, con 23 delegaciones en península, Baleares y Canarias."}},
+        {"@type":"Question","name":"¿Qué diferencia hay entre un vigilante de seguridad y un controlador de acceso?","acceptedAnswer":{"@type":"Answer","text":"El vigilante de seguridad es personal habilitado dentro del ámbito de la seguridad privada. El controlador de acceso es personal auxiliar que gestiona identificación, registro y flujo de entradas y salidas, sin funciones de seguridad privada."}},
+        {"@type":"Question","name":"¿Se pueden auditar las rondas de vigilancia?","acceptedAnswer":{"@type":"Answer","text":"Sí. Las rondas se ejecutan con control de puntos sobre zonas o áreas determinadas y las rutas pueden consultarse en tiempo real mediante web, además del parte de incidencias de cada turno."}},
+        {"@type":"Question","name":"¿Cuánto cuesta un servicio de seguridad privada?","acceptedAnswer":{"@type":"Answer","text":"Depende del número de horas, del tipo de puesto, del nivel de riesgo de la instalación y de los medios técnicos asociados. Progesa realiza un análisis previo y entrega un presupuesto cerrado con el dispositivo dimensionado."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+/* ================= CONFIGURACIÓN =================
+   Endpoint del backend que recibe los formularios.
+   Vacío = abre el cliente de correo con los datos. */
+const FORM_ENDPOINT = "";
+
+/* ---------- Delegaciones (coordenadas medidas sobre el mapa original) ---------- */
+const DELEGACIONES = [
+  ["A Coruña","Galicia",13.07,13.49,"Cobertura del arco atlántico noroeste: puerto, polígonos y sedes corporativas."],
+  ["Gijón","Asturias",26.81,11.20,"Servicios portuarios e industriales en el Principado y su área metropolitana."],
+  ["Bilbao","País Vasco",49.48,14.06,"Puerto, industria pesada y logística en la margen izquierda del Nervión."],
+  ["Vigo","Galicia",11.60,22.70,"Terminal portuaria, automoción y polígonos del sur de Galicia."],
+  ["Zaragoza","Aragón",61.47,32.31,"Plataforma logística del valle del Ebro y naves de distribución."],
+  ["Barcelona","Cataluña",84.24,30.71,"Sede central de la corporación en L'Hospitalet de Llobregat. Coordina Cataluña y enlaza con el resto de delegaciones."],
+  ["Tarragona","Cataluña",72.36,37.11,"Complejo petroquímico, puerto y polígonos del Camp de Tarragona."],
+  ["Salamanca","Castilla y León",36.49,36.98,"Servicios corporativos, administración pública y eventos."],
+  ["Madrid","Comunidad de Madrid",45.52,42.79,"Sedes corporativas, aeropuerto y grandes plataformas logísticas."],
+  ["Castellón","Comunidad Valenciana",67.86,47.58,"Puerto, industria cerámica y polígonos de la Plana."],
+  ["Sagunto","Comunidad Valenciana",64.92,56.02,"Terminal portuaria, campas de vehículos y siderurgia."],
+  ["Valencia","Comunidad Valenciana",66.77,63.38,"Puerto de Valencia, logística y centros comerciales."],
+  ["Albacete","Castilla-La Mancha",54.11,58.94,"Industria, agroalimentario y distribución en el corredor sureste."],
+  ["Alicante","Comunidad Valenciana",60.63,74.74,"Puerto, hostelería, retail y servicios auxiliares."],
+  ["Murcia","Región de Murcia",53.77,79.21,"Agroalimentario, centros logísticos y sedes corporativas."],
+  ["Córdoba","Andalucía",37.68,70.91,"Industria, patrimonio y servicios auxiliares."],
+  ["Sevilla","Andalucía",29.74,74.75,"Puerto fluvial, aeronáutica, administración y grandes eventos."],
+  ["Almería","Andalucía",49.46,83.53,"Agroindustria, invernaderos y puerto."],
+  ["Cádiz","Andalucía",27.28,82.90,"Bahía de Cádiz: astilleros, puerto y polígonos."],
+  ["Málaga","Andalucía",41.62,83.55,"Puerto, turismo, retail y parques tecnológicos."],
+  ["Algeciras","Andalucía",31.41,88.98,"Una de las mayores terminales de contenedores de Europa."],
+  ["Palma de Mallorca","Islas Baleares",88.55,54.40,"Puerto, aeropuerto y sector hotelero en las Islas Baleares."],
+  ["Las Palmas de Gran Canaria","Islas Canarias",3.39,93.94,"Puerto de Las Palmas, logística insular y turismo."]
+];
+
+/* ---- Construcción del mapa interactivo y del listado ---- */
+const holder=document.getElementById('mapHolder');
+const listEl=document.getElementById('delegList');
+const dpName=document.getElementById('dpName');
+const dpTxt=document.getElementById('dpTxt');
+const dpZone=document.querySelector('#delegPanel .z');
+
+DELEGACIONES.forEach((d,i)=>{
+  const [nombre,zona,x,y]=d;
+  const hot=document.createElement('button');
+  hot.className='hot'; hot.type='button'; hot.dataset.i=i;
+  hot.style.left=x+'%'; hot.style.top=y+'%';
+  hot.setAttribute('aria-label','Delegación de '+nombre);
+  holder.appendChild(hot);
+
+  const li=document.createElement('li');
+  const b=document.createElement('button');
+  b.type='button'; b.dataset.i=i; b.textContent=nombre;
+  li.appendChild(b); listEl.appendChild(li);
+});
+
+function selectDeleg(i){
+  const [nombre,zona,,,txt]=DELEGACIONES[i];
+  document.querySelectorAll('.hot.on,.deleg-list button.on').forEach(el=>el.classList.remove('on'));
+  holder.querySelector('.hot[data-i="'+i+'"]').classList.add('on');
+  listEl.querySelector('button[data-i="'+i+'"]').classList.add('on');
+  dpZone.textContent=zona;
+  dpName.textContent=nombre;
+  dpTxt.textContent=txt;
+}
+holder.addEventListener('click',e=>{const h=e.target.closest('.hot');if(h)selectDeleg(+h.dataset.i)});
+holder.addEventListener('mouseover',e=>{const h=e.target.closest('.hot');if(h)selectDeleg(+h.dataset.i)});
+listEl.addEventListener('click',e=>{const b=e.target.closest('button');if(b)selectDeleg(+b.dataset.i)});
+listEl.addEventListener('mouseover',e=>{const b=e.target.closest('button');if(b)selectDeleg(+b.dataset.i)});
+listEl.addEventListener('focusin',e=>{const b=e.target.closest('button');if(b)selectDeleg(+b.dataset.i)});
+selectDeleg(5); // Barcelona
+
+/* Selector de delegación del formulario de empleo */
+const selDeleg=document.querySelector('[data-deleg]');
+if(selDeleg){
+  selDeleg.innerHTML='<option value="">Indiferente</option>'+DELEGACIONES.map(d=>'<option>'+d[0]+'</option>').join('');
+}
+
+/* ---------- Pestañas de servicios ---------- */
+const tabs=[...document.querySelectorAll('.tab')];
+tabs.forEach(t=>{
+  t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.setAttribute('aria-selected','false'));
+    document.querySelectorAll('.panel').forEach(p=>{p.classList.remove('on');p.hidden=true});
+    t.setAttribute('aria-selected','true');
+    const p=document.getElementById(t.getAttribute('aria-controls'));
+    p.hidden=false; p.classList.add('on');
+  });
+  t.addEventListener('keydown',e=>{
+    const i=tabs.indexOf(t);
+    if(e.key==='ArrowRight'){tabs[(i+1)%tabs.length].focus();tabs[(i+1)%tabs.length].click()}
+    if(e.key==='ArrowLeft'){tabs[(i-1+tabs.length)%tabs.length].focus();tabs[(i-1+tabs.length)%tabs.length].click()}
+  });
+});
+
+/* ---------- Carrusel de sectores ---------- */
+const track=document.getElementById('track');
+const dotsBox=document.getElementById('dots');
+const cards=[...track.children];
+let auto;
+
+cards.forEach((_,i)=>{
+  const d=document.createElement('button');
+  d.className='dot'+(i===0?' on':''); d.type='button';
+  d.setAttribute('aria-label','Ir al sector '+(i+1));
+  d.addEventListener('click',()=>{track.scrollTo({left:cards[i].offsetLeft-track.offsetLeft,behavior:'smooth'});stopAuto()});
+  dotsBox.appendChild(d);
+});
+const dots=[...dotsBox.children];
+
+function syncDots(){
+  const idx=cards.reduce((best,c,i)=>{
+    const d=Math.abs(c.offsetLeft-track.offsetLeft-track.scrollLeft);
+    return d<best.d?{d,i}:best;
+  },{d:1e9,i:0}).i;
+  dots.forEach((d,i)=>d.classList.toggle('on',i===idx));
+}
+track.addEventListener('scroll',()=>requestAnimationFrame(syncDots),{passive:true});
+
+function step(dir){
+  const w=cards[0].offsetWidth+20;
+  const atEnd=track.scrollLeft+track.clientWidth>=track.scrollWidth-4;
+  if(dir>0&&atEnd) track.scrollTo({left:0,behavior:'smooth'});
+  else track.scrollBy({left:dir*w,behavior:'smooth'});
+}
+document.getElementById('next').addEventListener('click',()=>{step(1);stopAuto()});
+document.getElementById('prev').addEventListener('click',()=>{step(-1);stopAuto()});
+
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function startAuto(){if(!reduce)auto=setInterval(()=>step(1),5200)}
+function stopAuto(){clearInterval(auto)}
+track.addEventListener('pointerenter',stopAuto);
+track.addEventListener('pointerleave',startAuto);
+startAuto();
+
+/* arrastrar con el ratón */
+let down=false,sx=0,sl=0;
+track.addEventListener('pointerdown',e=>{down=true;sx=e.clientX;sl=track.scrollLeft;track.classList.add('dragging');stopAuto()});
+track.addEventListener('pointermove',e=>{if(down)track.scrollLeft=sl-(e.clientX-sx)});
+['pointerup','pointercancel','pointerleave'].forEach(ev=>track.addEventListener(ev,()=>{down=false;track.classList.remove('dragging')}));
+
+/* ---------- Acordeón FAQ ---------- */
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');
+  if(item.classList.contains('open')) a.style.maxHeight=a.scrollHeight+'px';
+  q.addEventListener('click',()=>{
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(o=>{
+      o.classList.remove('open');
+      o.querySelector('.faq-a').style.maxHeight=null;
+      o.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if(!open){
+      item.classList.add('open');
+      a.style.maxHeight=a.scrollHeight+'px';
+      q.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
+/* ---------- Revelado al hacer scroll ---------- */
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* ---------- Contadores ---------- */
+const cio=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target, end=+el.dataset.count, plain=el.dataset.plain;
+    let t0=null;
+    const tick=ts=>{
+      if(!t0)t0=ts;
+      const p=Math.min((ts-t0)/1300,1);
+      const v=Math.floor(end*(1-Math.pow(1-p,3)));
+      el.textContent=plain?String(v):v.toLocaleString('es-ES');
+      if(p<1)requestAnimationFrame(tick); else el.textContent=plain?String(end):end.toLocaleString('es-ES');
+    };
+    requestAnimationFrame(tick); cio.unobserve(el);
+  });
+},{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* ---------- Cabecera, scrollspy y volver arriba ---------- */
+const header=document.getElementById('header'), up=document.getElementById('up');
+const links=[...document.querySelectorAll('.nav a[href^="#"]')];
+const secs=links.map(l=>document.querySelector(l.getAttribute('href'))).filter(Boolean);
+addEventListener('scroll',()=>{
+  const y=scrollY;
+  header.classList.toggle('stuck',y>10);
+  up.classList.toggle('on',y>700);
+  let cur=null;
+  secs.forEach(s=>{if(s.getBoundingClientRect().top<=140)cur=s});
+  links.forEach(l=>l.classList.toggle('active',cur&&l.getAttribute('href')==='#'+cur.id));
+},{passive:true});
+up.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+
+/* Parallax suave del sello del hero */
+const seal=document.querySelector('.hero-seal');
+if(seal&&!reduce){
+  addEventListener('scroll',()=>{
+    const y=scrollY;
+    if(y<900) seal.style.transform='translateY('+(y*.18)+'px)';
+  },{passive:true});
+}
+
+/* ---------- Menú móvil ---------- */
+const toggle=document.querySelector('.nav-toggle'), nav=document.getElementById('nav');
+toggle.addEventListener('click',()=>{
+  const open=nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded',open);
+  toggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
+});
+nav.addEventListener('click',e=>{if(e.target.tagName==='A')nav.classList.remove('open')});
+
+/* ---------- Asistente de candidatura ---------- */
+const formEmpleo=document.getElementById('formEmpleo');
+const stepEls=[...formEmpleo.querySelectorAll('.step')];
+const dotEls=[...document.querySelectorAll('#steps .step-dot')];
+let cur=0;
+
+function paint(){
+  stepEls.forEach((s,i)=>s.classList.toggle('on',i===cur));
+  dotEls.forEach((d,i)=>{
+    d.classList.toggle('act',i===cur);
+    d.classList.toggle('done',i<cur);
+  });
+}
+function validStep(i){
+  const s=stepEls[i];
+  const req=[...s.querySelectorAll('[required]')];
+  const ok=req.every(f=>f.type==='checkbox'?f.checked:f.checkValidity()&&f.value.trim()!=='');
+  const err=s.querySelector('.err');
+  if(err)err.classList.toggle('show',!ok);
+  if(!ok){const bad=req.find(f=>f.type==='checkbox'?!f.checked:!f.value.trim());if(bad)bad.focus()}
+  return ok;
+}
+formEmpleo.addEventListener('click',e=>{
+  if(e.target.closest('[data-next]')&&validStep(cur)){cur++;paint()}
+  if(e.target.closest('[data-back]')){cur--;paint()}
+});
+
+/* ---------- Envío de formularios ---------- */
+async function enviar(datos,asunto){
+  if(FORM_ENDPOINT){
+    await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({asunto,...datos})});
+  }else{
+    const cuerpo=Object.entries(datos).map(([k,v])=>k+': '+v).join('\n');
+    location.href='mailto:direccioncomercial@progesa.es?subject='+encodeURIComponent(asunto)+'&body='+encodeURIComponent(cuerpo);
+  }
+}
+
+formEmpleo.addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(!validStep(cur))return;
+  await enviar(Object.fromEntries(new FormData(formEmpleo).entries()),'Candidatura desde progesa.es');
+  formEmpleo.style.display='none';
+  document.getElementById('steps').style.display='none';
+  document.getElementById('doneBox').classList.add('on');
+});
+
+const formContacto=document.getElementById('formContacto');
+formContacto.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const req=[...formContacto.querySelectorAll('[required]')];
+  const ok=req.every(f=>f.type==='checkbox'?f.checked:f.checkValidity()&&f.value.trim()!=='');
+  document.getElementById('errContacto').classList.toggle('show',!ok);
+  if(!ok){const bad=req.find(f=>f.type==='checkbox'?!f.checked:!f.value.trim());if(bad)bad.focus();return}
+  await enviar(Object.fromEntries(new FormData(formContacto).entries()),'Consulta desde progesa.es');
+  formContacto.innerHTML='<div style="text-align:center;padding:34px 0"><div class="tick-circle" style="border-color:var(--gold)"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6.5" stroke="#C8912F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 style="font-size:1.5rem;margin-bottom:10px">Consulta enviada</h3><p style="color:var(--steel);margin:0">Le responderemos en menos de 24 horas laborables. Si es urgente, llame al 605 12 30 75.</p></div>';
+});
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
