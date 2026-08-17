@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_files/
 
-Sitemap: https://www.progesa.es/sitemap.xml
+Sitemap: __DOMINIO__/sitemap.xml
